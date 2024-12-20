@@ -2,7 +2,7 @@
 title:       "hugo"
 subtitle:    ""
 description: "hugo使用学习历程"
-date:        2024-12-19
+date:        2024-12-20T06:19:35Z
 author:      "Wayne"
 image:       ""
 tags:        ["hugo"]
@@ -19,10 +19,13 @@ categories:  ["Tech" ]
 3. `docker exec -it hugo /bin/sh`
 4. 进入hugo容器后，就可以在里面运行各种hugo命令了(hugo new site myblog/hugo new content/hugo server等)
 
-## content中的markdown文件不支持raw html语法
+## hugo tips
+
+### content中的markdown文件不支持raw html语法
 
 content中的markdown文件中的内容不支持html语法,如 `<span style:"red";>xxx</span>`,解决办法:  
-hugo.toml中添加下面的内容:
+hugo.toml中添加下面的内容:  
+
 ```
 [markup]
 [markup.goldmark]
@@ -30,7 +33,6 @@ hugo.toml中添加下面的内容:
 unsafe = true
 ```
 
-## hosting hugo site on github pages
 
 
 

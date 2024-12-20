@@ -1,10 +1,11 @@
 ---
-title:       "An Example Post"
+title:       ""
 subtitle:    ""
 description: ""
-date:        2018-06-04
+date:        {{ .Date }}
+draft:       false
 author:      "Wayne"
 image:       ""
-tags:        ["tag1", "tag2"]
+tags:        ["tag1"]
 categories:  ["Tech" ]
 ---
