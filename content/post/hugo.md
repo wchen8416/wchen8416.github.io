@@ -30,5 +30,6 @@ hugo.toml中添加下面的内容:
 unsafe = true
 ```
 
+## hosting hugo site on github pages
 
 
